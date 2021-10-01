@@ -19,7 +19,7 @@ The composition shows a hatchet and a lamp on the kitchen table. The hatchet bel
 
 ## How was it made?
 
-I made this version in 3D with awesome Three Js library. In this interactive form, it is also valid as an independent artwork within the new-media-art genre.
+I made this version in 3D with awesome [Three Js](https://github.com/mrdoob/three.js) library. In this interactive form, it is also valid as an independent artwork within the new-media-art genre.
 
 ![How was it made](https://raw.githubusercontent.com/C4RC0/hatchet-on-the-table/master/packages/hatchet-on-the-table/src/common/components/Concept/how-was-it-made.jpg)
 
