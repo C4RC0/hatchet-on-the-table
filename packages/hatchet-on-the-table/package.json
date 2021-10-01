@@ -1,0 +1,43 @@
+{
+    "name": "hatchet-on-the-table",
+    "description": "A conceptual, new-media-art website for 'Math and mood' still life",
+    "license": "MIT",
+    "dependencies": {
+        "wapplr": "^1.0.0",
+        "wapplr-pwa": "^1.0.0",
+        "wapplr-react": "^1.0.0",
+        "clsx": "^1.1.1",
+        "@material-ui/core": "next",
+        "@material-ui/icons": "next",
+        "@material-ui/styles": "next",
+        "@emotion/react": "^11.4.0",
+        "@emotion/styled": "^11.3.0",
+        "three": "^0.132.2",
+        "react-dom": "^17.0.2",
+        "path-browserify": "^1.0.1",
+        "postprocessing": "^6.23.0"
+    },
+    "devDependencies": {
+        "wapplr-cli": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "browserslist": [
+        ">1%",
+        "last 4 versions",
+        "Firefox ESR",
+        "not ie < 9"
+    ],
+    "scripts": {
+        "hatchet-on-the-table start": "wapplr-cli start",
+        "hatchet-on-the-table build": "wapplr-cli build",
+        "hatchet-on-the-table clean": "wapplr-cli clean"
+    },
+    "version": "1.0.0",
+    "files": [
+        "dist/*"
+    ],
+    "main": "dist/server",
+    "browser": "dist/client"
+}
