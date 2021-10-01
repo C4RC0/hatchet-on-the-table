@@ -1,6 +1,6 @@
 {
     "name": "hatchet-on-the-table",
-    "description": "A conceptual, new-media-art website for 'Math and mood' still life",
+    "description": "A new-media-art website for the 'Hatchet on the table' 3D still life",
     "license": "MIT",
     "dependencies": {
         "wapplr": "^1.0.0",

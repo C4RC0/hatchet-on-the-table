@@ -8,7 +8,7 @@ export function getConfig(p = {}) {
     const common = {
         ...commonConfig,
         siteName: "Hatchet on the table",
-        description: "A conceptual, new-media-art website for the 'Hatchet on the table' still life",
+        description: "A new-media-art website for the 'Hatchet on the table' 3D still life",
     };
 
     return {
