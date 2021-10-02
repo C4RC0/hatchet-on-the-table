@@ -37,7 +37,7 @@ export default function Concept() {
                 <div className={style.sectionContent}>
                     <div className={style.column}>
                         <div>{"In 2014, I painted this still life on a 40x50 canvas with oil. My teacher was Csaba Flip. He is a Munkácsy award-winning painter and teacher. I created this painting in his studio."}</div>
-                        <div>{"The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for her 60th birthday."}</div>
+                        <div>{"The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for his 60th birthday."}</div>
                     </div>
                     <div className={clsx(style.column, style.grayBgForPhoto)}>
                         <img className={style.photo} src={photo}/>

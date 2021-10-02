@@ -13,7 +13,7 @@ This artwork is also part of a series in which I rework my previously painted oi
 
 In 2014, I painted this still life on a 40x50 canvas with oil. My teacher was Csaba Flip. He is a Munkácsy award-winning painter and teacher. I created this painting in his studio.
 
-The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for her 60th birthday.
+The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for his 60th birthday.
 
 ![The original](https://raw.githubusercontent.com/C4RC0/hatchet-on-the-table/master/packages/hatchet-on-the-table/src/common/components/Concept/photo.jpg)
 
