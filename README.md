@@ -1,7 +1,7 @@
 # Hatchet on the table
 
 ### A new-media-art website for the 'Hatchet on the table' 3D still life
-### [Website](https://hatchetonthetable.com) | [Behance](https://www.behance.net/gallery/127631653/Hatchet-on-the-table)
+### [Website](https://hatchetonthetable.com) | [Behance](https://www.behance.net/gallery/128515397/Hatchet-on-the-table)
 
 ## Concept
 
