@@ -1,6 +1,6 @@
 const menus = {
     conceptMenu: "The concept",
-    canvasMenu: "Canvas",
+    canvasMenu: "3D artwork",
     gitHubMenu: "GitHub",
     behanceMenu: "Behance",
 };

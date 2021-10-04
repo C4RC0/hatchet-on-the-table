@@ -1,5 +1,6 @@
 import App from "./components/App";
 import routes from "./config/constants/routes";
+import titles from "./config/constants/titles";
 
 export default function setContents(p = {}) {
 
@@ -21,18 +22,16 @@ export default function setContents(p = {}) {
     wapp.contents.add({
         canvas: {
             render: App,
-            description: "Hatchet on the table",
             renderType: "react",
             title: function (p) {
-                return getTitle({...p, title: "Canvas"})
+                return getTitle({...p, title: titles.canvasTitle})
             }
         },
         concept: {
             render: App,
-            description: "Concept",
             renderType: "react",
             title: function (p) {
-                return getTitle({...p, title: "Concept"})
+                return getTitle({...p, title: titles.conceptTitle})
             }
         },
     });
@@ -40,6 +39,7 @@ export default function setContents(p = {}) {
     wapp.router.replace([
         {path: "/", contentName: "canvas"},
         {path: routes.canvasRoute, contentName: "canvas"},
+        {path: "/canvas", contentName: "canvas"},
         {path: routes.conceptRoute, contentName: "concept"},
     ])
 
