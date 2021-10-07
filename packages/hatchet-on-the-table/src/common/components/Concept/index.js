@@ -29,15 +29,14 @@ export default function Concept() {
                 <div className={style.sectionTitle}>{"Concept"}</div>
                 <div className={style.sectionContent}>
                     <div className={style.column}>
-                        <div>{"Objects belong to people. There can be a countless of reasons why an object is placed on the table. In this case, this object is a work tool. Why is the hatchet on the table? Maybe someone just got home from work and put it on the kitchen table, but it’s also conceivable that the work was done and also that they won’t be using it anymore. What kind of story would you think of about it? "}</div>
+                        <div>{"Objects belong to people. There can be a countless reasons why an object is placed on the table. In this case, this object is a work tool. Why is the hatchet on the table? Maybe someone just got home from work and put it on the kitchen table, but it’s also conceivable that the work was done and also that they won’t be using it anymore. What kind of story would you think of about it?"}</div>
                         <div>{"This artwork is also part of a series in which I rework my previously painted oil paintings with modern technology."}</div>
                     </div>
                 </div>
                 <div className={style.sectionTitle}>{"The original"}</div>
                 <div className={style.sectionContent}>
                     <div className={style.column}>
-                        <div>{"In 2014, I painted this still life on a 40x50 canvas with oil. My teacher was Csaba Flip. He is a Munkácsy award-winning painter and teacher. I created this painting in his studio."}</div>
-                        <div>{"The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for his 60th birthday."}</div>
+                        <div>{"In 2014, I painted this still life on a 40x50 canvas with oil. The composition shows a hatchet and a lamp on the kitchen table. The hatchet belongs to my carpenter father. I made it for him as a gift for his 60th birthday." }</div>
                     </div>
                     <div className={clsx(style.column, style.grayBgForPhoto)}>
                         <img className={style.photo} src={photo}/>
