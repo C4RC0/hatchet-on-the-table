@@ -9,6 +9,7 @@ import favicon from "./images/icon_192x192.png";
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
+import record from "./record";
 
 export function getConfig(p = {}) {
 
@@ -23,6 +24,7 @@ export function getConfig(p = {}) {
     const server = {
         ...serverConfig,
         icon: favicon,
+        disableUseDefaultMiddlewares: true,
         database: {
             mongoConnectionString: "mongodb://localhost/hatchetonthetable",
         }
@@ -95,6 +97,7 @@ export async function createMiddleware(p = {}) {
     // eslint-disable-next-line no-unused-vars
     const wapp = p.wapp || await createServer(p);
     return [
+        record,
         function middleware(req, res, next) {
             next()
         }
@@ -129,7 +132,20 @@ export async function run(p = defaultConfig) {
     const {DEV} = globals;
 
     const app = wapp.server.app;
-    app.use(await createMiddleware({wapp, ...p}));
+
+    app.use([
+        wapp.server.middlewares.wapp,
+        wapp.server.middlewares.static,
+    ]);
+
+    app.use(await createMiddleware({wapp}));
+
+    app.use([
+        ...Object.keys(wapp.server.middlewares).map(function (key){
+            return (key === "wapp" || key === "static") ? function next(req, res, next) { return next(); } : wapp.server.middlewares[key];
+        })
+    ]);
+
     wapp.server.listen();
 
     if (typeof DEV !== "undefined" && DEV && module.hot){

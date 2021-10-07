@@ -1,7 +1,8 @@
 const titles = {
     homeTitle: "Home",
     canvasTitle: "3D artwork",
-    conceptTitle: "Concept"
+    conceptTitle: "Concept",
+    videoTitle: "Video"
 };
 
 export default titles;

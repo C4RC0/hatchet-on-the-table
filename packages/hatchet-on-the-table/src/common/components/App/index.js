@@ -15,6 +15,7 @@ import menus from "../../config/constants/menus";
 import NotFound from "../NotFound";
 import Concept from "../Concept";
 import Canvas from "../Canvas";
+import Video from "../Video";
 
 import AppContext from "./context";
 
@@ -66,6 +67,7 @@ export default function App(props) {
     const appContext = {messages, labels, titles, routes, menus, template};
 
     const canvas = (requestPath.startsWith(routes.canvasRoute) || requestPath === "/");
+    const video = (requestPath.startsWith(routes.videoRoute) || requestPath.startsWith(routes.recordRoute));
 
     return (
         <AppContext.Provider value={appContext}>
@@ -89,8 +91,9 @@ export default function App(props) {
                               <Canvas />
                                   :
                             (requestPath === routes.conceptRoute) ?
-                              <Concept />
-                              :
+                              <Concept /> :
+                                (video) ?
+                                    <Video /> :
                               <NotFound disableLoginButtons={true} />
                     }
                 </ThemedTemplate>

@@ -15,7 +15,11 @@
         "three": "^0.132.2",
         "react-dom": "^17.0.2",
         "path-browserify": "^1.0.1",
-        "postprocessing": "^6.23.0"
+        "postprocessing": "^6.23.0",
+        "puppeteer": "^10.4.0",
+        "puppeteer-screen-recorder": "^2.0.2",
+        "@ffmpeg/ffmpeg": "^0.10.1",
+        "three.meshline": "^1.3.0"
     },
     "devDependencies": {
         "wapplr-cli": "^1.0.0"

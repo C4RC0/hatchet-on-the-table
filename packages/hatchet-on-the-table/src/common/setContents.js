@@ -27,6 +27,13 @@ export default function setContents(p = {}) {
                 return getTitle({...p, title: titles.canvasTitle})
             }
         },
+        video: {
+            render: App,
+            renderType: "react",
+            title: function (p) {
+                return getTitle({...p, title: titles.videoTitle})
+            }
+        },
         concept: {
             render: App,
             renderType: "react",
@@ -41,6 +48,8 @@ export default function setContents(p = {}) {
         {path: routes.canvasRoute, contentName: "canvas"},
         {path: "/canvas", contentName: "canvas"},
         {path: routes.conceptRoute, contentName: "concept"},
+        {path: routes.videoRoute, contentName: "video"},
+        {path: routes.recordRoute, contentName: "video"},
     ])
 
 }
