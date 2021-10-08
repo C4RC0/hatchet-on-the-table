@@ -5,7 +5,7 @@ const routes = {
     behanceUrl: "https://www.behance.net/gallery/128515397/Hatchet-on-the-table",
     videoRoute: "/video",
     recordRoute: "/record",
-    nftUrl: "https://foundation.app/@C4RC0/95355"
+    nftUrl: "https://foundation.app/@C4RC0/95477"
 };
 
 export default routes;
