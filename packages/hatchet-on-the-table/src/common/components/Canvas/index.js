@@ -592,7 +592,6 @@ export default function Canvas(props) {
             }
 
             const wireGeometry = new LineGeometry();
-            console.log(wireGeometry)
             wireGeometry.setPositions( wirePositions );
 
             const wireMaterial = new LineMaterial( {
@@ -626,8 +625,6 @@ export default function Canvas(props) {
 
             const hemiLight = new THREE.HemisphereLight( 0xf8875f, 0xf8875f, 1 );
             hemiLight.layers.set(3);
-
-            console.log(wireCylinder)
 
             scene.add( hemiLight );
             scene.add( lightBulb );
